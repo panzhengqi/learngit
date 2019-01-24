@@ -36,7 +36,7 @@ int main(int argc, char *argv[])
     DTConfig * dtconfig      = new DTConfig(strSystemConfigFile, false);
     Log::get_instance()->init(LogFile.c_str(),1024*1024*1024,50000,1);
     string strTemp;
-
+/*
     if(dtconfig->GetValue("UdpPhone1_RemoteIP", strTemp))
     {
         UdpPhone1_RemoteIP_str = strTemp.data();
@@ -209,7 +209,7 @@ int main(int argc, char *argv[])
         printf("Get UdpTongji_LocalPort failed\n");
         return false;
     }
-
+*/
     UdpCommon  *udp_Andriod = new UdpCommon();
     udp_Andriod->getUdpObject()->SetPhone1IP(UdpPhone1_RemoteIP_str);
     udp_Andriod->getUdpObject()->SetPhone2IP(UdpPhone2_RemoteIP_str);
