@@ -1,0 +1,7 @@
+#ifndef COMMONDEDINE_H
+#define COMMONDEDINE_H
+
+
+
+
+#endif // COMMONDEDINE_H
